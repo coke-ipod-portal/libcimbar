@@ -92,6 +92,7 @@ set(PROJECTS
 	src/exe/cimbar_recv
 	src/exe/cimbar_recv2
 	src/exe/cimbar_send
+	src/exe/cfc_send_chunked
 	src/exe/build_image_assets
 )
 endif()
@@ -104,5 +105,4 @@ include_directories(
 foreach(proj ${PROJECTS})
 	add_subdirectory(${proj} build/${proj})
 endforeach()
-
 
